@@ -1,7 +1,10 @@
 body {
     background-color: #E5E5E5;
 }
+header{
+    background-color:#562EFF;
 
+}
 main,
 footer {
     margin: 36px 285px;
@@ -37,7 +40,7 @@ a {
     color: #562EFF;
     text-decoration: none;
 }
-
+/* -------------------------------------------------------------- */
 .red,
 .fa-clock {
     color: red;
@@ -46,7 +49,30 @@ a {
 .fa-color {
     color: #FFC014;
 }
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 36px 285px;
+}
+ul{
+    display: flex;
+    align-items: center;
+   column-gap: 35px;
+    color: aliceblue;
+}
+nav  h2{
+    color: white;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+/* --------------------------------------------------------------- */
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -127,7 +153,7 @@ hr {
 /* -------------------------------------------------------------- */
 @media screen and (max-width:576px) {
 
-    main,
+    nav,main,
     footer {
         margin: 0;
     }
@@ -161,7 +187,7 @@ hr {
 
 @media screen and (min-width:577px) and (max-width:992px) {
 
-    main,
+    nav,main,
     footer {
         margin: 36px 100px;
     }
