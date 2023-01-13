@@ -157,7 +157,21 @@ hr {
     footer {
         margin: 0;
     }
-
+nav{
+    flex-direction: column;
+   
+}
+nav > h2{
+    text-align: center;
+    margin-left: 0;
+    font-size: 30px;
+    margin-right: 70px;
+}
+ul{
+    margin-top: -19px;
+    margin-right: 15px;
+    padding: 0;
+}
     .players,
     .blogs {
         grid-template-columns: repeat(1, 1fr);
