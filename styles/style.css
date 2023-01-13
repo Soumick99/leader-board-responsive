@@ -2,13 +2,15 @@ body {
     background-color: #E5E5E5;
 }
 
-main , footer{
+main,
+footer {
     margin: 36px 285px;
     background-color: #FFFFFF;
     margin-top: 21px;
 }
 
-section {
+section,
+.courses {
     margin: 10px 50px 30px 30px;
 }
 
@@ -26,13 +28,25 @@ h2 {
     font-size: 24px;
     padding-top: 30px;
 }
-span{
+
+span {
     color: #9F9F9F;
 }
-a{
+
+a {
     color: #562EFF;
     text-decoration: none;
 }
+
+.red,
+.fa-clock {
+    color: red;
+}
+
+.fa-color {
+    color: #FFC014;
+}
+
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -77,33 +91,94 @@ hr {
     height: 117px;
 }
 
-.blog-info{
-    width: 174px;
-}
 /* -------------------------------------------------------- */
+.courses {
+    display: flex;
+    column-gap: 35px;
+}
+
+.courses > div {
+    flex: 1;
+}
+
+.course {
+    padding: 13px 17px 0 11px;
+}
+
+.course img {
+    width: 100%;
+    height: 204px;
+    border-radius: 5px;
+}
+
+.course-rating {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+.course-rating-2 {
+    background-color: rgba(255, 0, 0, 0.244);
+    border-radius: 20%;
+    padding: 0 10px;
+    color: red;
+}
 
 /* -------------------------------------------------------------- */
 @media screen and (max-width:576px) {
-    main {
+
+    main,
+    footer {
         margin: 0;
     }
 
-    .players, .blogs {
+    .players,
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 10px;
     }
-}
 
-@media screen and (min-width:577px) and (max-width:992px) {
-    main {
-        margin: 36px 100px;
-    }
-    .blogs{
-        gap: 30px;
-    }
-    .blog{
+    .blog {
         flex-direction: column;
         row-gap: 5px;
         align-items: flex-start;
     }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .course {
+        padding: 0;
+
+    }
+
+    .course img {
+        width: 177px;
+        height: 117px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    main,
+    footer {
+        margin: 36px 100px;
+    }
+
+    .blogs {
+        gap: 30px;
+    }
+
+    .blog {
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: flex-start;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
