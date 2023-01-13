@@ -1,0 +1,55 @@
+body{
+    background-color: #9F9F9F;
+}
+main{
+    margin: 36px 285px;
+    background-color: #FFFFFF;
+}
+section{
+    margin: 50px 50px 30px 30px ;
+}
+h2{
+    color: #562EFF;
+    font-size: 24px;
+    padding-top: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 85px;
+    row-gap: 30px;
+    align-items: center;
+}
+.player{
+    display: flex;
+    gap: 20px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+hr{
+    width: 80%;
+   margin: 33px;
+   border: 1px solid #D1D1D1;
+}
+/* --------------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------- */
+@media screen and (max-width:576px) {
+    main{
+        margin: 0;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px)  {
+main{
+    margin: 36px 100px;
+}
+}
